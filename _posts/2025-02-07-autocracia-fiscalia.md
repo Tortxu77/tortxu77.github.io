@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Serie Autocracia - La Fiscalía
-subtitle: Una visión particular de hacia donde nos dirigimos.FISCALÍA
+subtitle: Una visión particular de hacia donde nos dirigimos.
+  FISCALÍA
 cover-img: /assets/img/hilos.png
 thumbnail-img: /assets/img/hilos.png
 share-img: /assets/img/hilos.png
