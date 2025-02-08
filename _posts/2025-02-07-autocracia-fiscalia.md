@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 
 title: Serie Autocracia - La Fiscalía
 subtitle: Una visión particular de hacia donde nos dirigimos.
   FISCALÍA
