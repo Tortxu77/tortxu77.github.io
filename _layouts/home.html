@@ -50,8 +50,7 @@ layout: page
         <span>By <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
       <p class="post-meta">
-        {% assign date_format = site.date_format | default: "%-d de %B, %Y" %}
-        Publicado el {{ post.date | date: date_format }}
+        Posted on {{ post.date | spanish_date }}
       </p>
 
       {% if thumbnail != "" %}
