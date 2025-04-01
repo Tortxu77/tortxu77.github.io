@@ -49,11 +49,26 @@ layout: page
       {% if post.author %}
         <span>By <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
+      {% assign day = post.date | date: "%-d" %}
+      {% assign month = post.date | date: "%B" %}
+      {% assign year = post.date | date: "%Y" %}
+      {% assign month_es = month 
+          | replace: "January", "Enero" 
+          | replace: "February", "Febrero" 
+          | replace: "March", "Marzo" 
+          | replace: "April", "Abril" 
+          | replace: "May", "Mayo" 
+          | replace: "June", "Junio" 
+          | replace: "July", "Julio" 
+          | replace: "August", "Agosto" 
+          | replace: "September", "Septiembre" 
+          | replace: "October", "Octubre" 
+          | replace: "November", "Noviembre" 
+          | replace: "December", "Diciembre" %}
       <p class="post-meta">
-        {% assign date_format = site.date_format | default: "%-d de %B de %Y" %}
-        Publicado el {{ post.date | spanish_date: date_format }}
-      </p>     
-
+    Publicado el {{ day }} de {{ month_es }} de {{ year }}
+     </p>
+      
       {% if thumbnail != "" %}
       <div class="post-image post-image-small">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
