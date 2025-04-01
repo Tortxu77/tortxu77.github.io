@@ -53,18 +53,18 @@ layout: page
       {% assign month = post.date | date: "%B" %}
       {% assign year = post.date | date: "%Y" %}
       {% assign month_es = month 
-          | replace: "January", "Enero" 
-          | replace: "February", "Febrero" 
-          | replace: "March", "Marzo" 
-          | replace: "April", "Abril" 
-          | replace: "May", "Mayo" 
-          | replace: "June", "Junio" 
-          | replace: "July", "Julio" 
-          | replace: "August", "Agosto" 
-          | replace: "September", "Septiembre" 
-          | replace: "October", "Octubre" 
-          | replace: "November", "Noviembre" 
-          | replace: "December", "Diciembre" %}
+          | replace: "January", "enero" 
+          | replace: "February", "febrero" 
+          | replace: "March", "marzo" 
+          | replace: "April", "abril" 
+          | replace: "May", "mayo" 
+          | replace: "June", "junio" 
+          | replace: "July", "julio" 
+          | replace: "August", "agosto" 
+          | replace: "September", "septiembre" 
+          | replace: "October", "octubre" 
+          | replace: "November", "noviembre" 
+          | replace: "December", "diciembre" %}
       <p class="post-meta">
     Publicado el {{ day }} de {{ month_es }} de {{ year }}
      </p>
