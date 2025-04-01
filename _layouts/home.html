@@ -50,7 +50,7 @@ layout: page
         <span>By <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
       <p class="post-meta">
-        Posted on {{ post.date | spanish_date: date_format }}
+        Publicado el {{ post.date | spanish_date: date_format }}
       </p>
 
       {% if thumbnail != "" %}
